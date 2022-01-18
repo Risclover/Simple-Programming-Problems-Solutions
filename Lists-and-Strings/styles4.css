@@ -1,0 +1,28 @@
+#oddresults {
+    list-style-type: none;
+    margin-top: -20px;
+    padding-top: -20px;
+}
+
+#oddresults li {
+    margin-left: -40px;
+    padding-top: -20px;
+    list-style-type: none;
+}
+
+#yourodds {
+    display: none;
+    margin-top: 10px;
+}
+
+.bulletnone {
+    list-style-type: none !important;
+}
+
+.rightside ul {
+    list-style-type: none;
+}
+
+.rightside li {
+    list-style: none;
+}

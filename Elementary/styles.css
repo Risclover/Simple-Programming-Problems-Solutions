@@ -1,0 +1,471 @@
+
+
+body, html {
+    font-family: 'Nunito', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5;
+    top: 0;
+    background-color: #F6F6F6;
+}
+
+button {
+    margin-right: 5px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+nav {
+    overflow-y: scroll;
+}
+
+nav ::-webkit-scrollbar-thumb {
+    background: #000000; 
+  }
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 0;
+    color: #EFF6FB;
+    transition: background-color .5s;
+}
+
+nav a:hover {
+    background-color:rgb(23, 24, 43);
+}
+
+input {
+    outline: none !important;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+#main-doc a {
+    color: rgb(22, 107, 219);
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#main-doc a:hover {
+    color: #1b9cf2;
+    text-decoration: none;
+}
+
+.nomarg {
+    margin-top: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.ptop {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.pbottom {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+p strong {
+    color: #0b2478;
+}
+
+p li {
+    color: #0b2478;
+}
+
+#navbar {
+    position: fixed;
+    overflow-x: hidden;
+    height: 100%;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    border-right: 3px solid rgb(1, 6, 36);
+    box-shadow: 3px 3px 5px rgb(23, 24, 43);
+    background-color: #1f243e;
+    z-index: 1;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+}
+
+#navbar a {
+    color: white;
+}
+
+#navbar li:hover a {
+    color: inherit;
+}
+
+#navbar header {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+#navbar ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0px;
+    margin-top: 0;
+    width: 100%;
+}
+
+#main-doc ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+.tophead {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #0b2478;
+    font-family: 'Nunito', sans-serif;
+    align-items:center;
+    padding: 0;
+}
+
+.arrows {
+    margin-right: 20px;
+}
+.backnext {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .9em;
+  font-weight: 600;
+  line-height: 1;
+  padding: .8em 1.1em;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.backnext:hover {
+  background-color: #1e293b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttonstyle {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .9em;
+    font-weight: 600;
+    line-height: 1;
+    padding: .6em .8em;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.buttonstyle .fa-lg {
+    margin-left: 5px;
+}
+
+.buttonstyle:hover {
+    background-color: #1e293b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fa-chevron-circle-left {
+    margin-right: 5px;
+}
+
+.fa-chevron-circle-right {
+    margin-left: 5px;
+}
+
+  
+#main-doc ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #0b2478; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: .75em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 1.1em;
+  }
+
+#main-doc {
+    position: relative;
+    margin-left: 325px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+    width: auto;
+    min-width: 200px;
+    max-width: 1200px;
+    height: 100%;
+    top: 0;
+    margin-right: auto;
+}
+
+#main-doc h2 {
+    font-size: 1.5em;
+    color: #0b2478;
+    margin-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#main-doc article {
+    margin: 15px;
+}
+
+#prereq_table th {
+    text-align: left;
+    padding: 3px 10px;
+    background-color: #ccd8e9;
+    border-bottom: 1px solid black;
+    width: 15%;
+    border-left: 2px solid black;
+}
+
+#prereq_table td {
+    padding: 3px 10px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 50%;
+    background-color: white;
+    font-size: 1em;
+}
+
+#prereq_table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-right: 20px;
+    color: black;
+    border-left: 2px solid black;
+    margin-top: 30px;
+}
+
+#literal-table {
+    border-collapse: collapse;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#literal-table td {
+    text-align: center;
+    border: 1px solid black;
+    border-left: 2px solid black;
+}
+
+#literal-table th {
+    margin-left: 10px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    color: black;
+    background-color: #ccd8e9;}
+
+#literal-table tr:nth-child(even) {
+    background-color: #f5f9ff;
+}
+
+#literal-table tr:nth-child(odd) {
+    background-color: white;
+}
+
+#basic-html-img {
+    width: 75%;
+}
+
+
+#main-doc h1 {
+    font-size: 2em;
+    color: #0b2478;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 10px;
+}
+
+hr {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.wordcode{
+    background-color:rgb(37, 40, 49);
+    color: white;
+    border-radius: 5px;
+    padding: 4px 5px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+
+#main-doc h3 {
+    margin-bottom: 5px;
+    color: #0b2478;
+    text-decoration: underline;
+}
+
+
+.widecode {
+    color: white;
+    line-height: 1.2;
+    background-color:rgb(37, 40, 49);
+    padding: 5px 15px;
+    font-size: 1em;
+    width: auto;
+    display: block;
+    border-left: 5px solid #3c467a;
+    margin-bottom: 20px;
+}
+
+.widecode1 {
+    color: white;
+    line-height: 1.2;
+    background-color:rgb(37, 40, 49);
+    padding: 5px 15px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: auto;
+    display: block;
+    border-left: 5px solid #3c467a;
+}
+
+.redcode {
+    background-color:rgb(236, 211, 211);
+    padding: 20px 15px;
+    font-size: 1em;
+    width: auto;
+    display: block;
+    border-left: 5px solid #be0000;
+    margin: 20px 0px;
+}
+
+.updated {
+    margin: 20px 0 5px 0;
+    font-size: 1.2em;
+    color: #0b2478;
+}
+
+.code1 {
+    color: #fa7676;
+}
+
+.code2 {
+    color: #82c1ff;
+}
+
+.code3 {
+    color: #c69aff;
+}
+
+.code4 {
+    color: #ffa149;
+}
+
+.comment {
+    color: gray;
+}
+
+#footer {
+    position: relative;
+    display: inline-block;
+    bottom: 3;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+.warning {
+    color: red;
+}
+
+.nav-expand {
+    display: none;
+    font-size: .9rem;
+    transition: background-color 0.5s;
+    padding-top: 0;
+}
+
+
+
+.nav-expand a {
+    padding: 10px 10px 10px 40px;
+}
+
+.nav-expand a:hover {
+    background-color:rgb(23, 24, 43);
+}
+
+.activea {
+    background-color:rgb(23, 24, 43);
+}
+
+@media only screen and (max-width: 915px) {
+    #navbar {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        max-height: 275px;
+        z-index: 1;
+        border: none;
+        border-bottom: 2px solid gray;
+        text-align: center;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 300px;
+    }
+}

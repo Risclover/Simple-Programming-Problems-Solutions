@@ -1,0 +1,532 @@
+
+
+body, html {
+    font-family: 'Nunito', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5;
+    top: 0;
+    background-color: #F6F6F6;
+}
+
+button {
+    margin-right: 5px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+nav {
+    overflow-y: scroll;
+}
+
+nav ::-webkit-scrollbar-thumb {
+    background: #000000; 
+  }
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 0;
+    color: #EFF6FB;
+    transition: background-color .5s;
+}
+
+nav a:hover {
+    background-color:rgb(23, 24, 43);
+}
+
+input {
+    outline: none !important;
+    font-family: 'Nunito', sans-serif;
+    border-radius: .9rem;
+    padding: 3px 5px;
+    border: 1px solid black;
+}
+
+#main-doc a {
+    color: rgb(22, 107, 219);
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+#main-doc a:hover {
+    color: #1b9cf2;
+    text-decoration: none;
+}
+
+.nomarg {
+    margin-top: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.pnone {
+    margin: 0;
+}
+
+.ptop {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.pbottom {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+p strong {
+    color: #0b2478;
+}
+
+p li {
+    color: #0b2478;
+}
+
+#navbar {
+    position: fixed;
+    overflow-x: hidden;
+    height: 100%;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    border-right: 3px solid rgb(1, 6, 36);
+    box-shadow: 3px 3px 5px rgb(23, 24, 43);
+    background-color: #1f243e;
+    z-index: 1;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+}
+
+#navbar a {
+    color: white;
+}
+
+#navbar li:hover a {
+    color: inherit;
+}
+
+#navbar header {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#submit {
+    position: absolute;
+    right: 1.5px;
+    height: 36px;
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0px;
+    margin-top: 0;
+    width: 100%;
+}
+
+#main-doc ul {
+    list-style: none; /* Remove default bullets */
+    margin-top: 0;
+}
+
+.tophead {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #0b2478;
+    font-family: 'Nunito', sans-serif;
+    align-items:center;
+    padding: 0;
+}
+
+.arrows {
+    margin-right: 20px;
+}
+.backnext {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .9em;
+  font-weight: 600;
+  line-height: 1;
+  padding: .8em 1.1em;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#userinput {
+    margin-right: 5px;
+    background-color: white; 
+}
+
+.inputtop {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.backnext:hover {
+  background-color: #1e293b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttonstyle {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    color: #0d172a;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .9em;
+    font-weight: 600;
+    line-height: 1;
+    padding: .6em .8em;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.buttonstyle .fa-lg {
+    margin-left: 5px;
+}
+
+.buttonstyle:hover {
+    background-color: #1e293b;;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttonstyle2 {
+    background-color: hsl(217, 42%, 20%);
+    border: 0 solid #e2e8f0;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    color: #e2e8f0;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .9em;
+    font-weight: 600;
+    line-height: 1;
+    padding: .6em .8em;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.buttonstyle2 .fa-lg {
+    margin-left: 5px;
+}
+
+.buttonstyle2:hover {
+    background-color: #fff;
+    color: #0d172a;
+    cursor: pointer;
+}
+
+.fa-chevron-circle-left {
+    margin-right: 5px;
+}
+
+.fa-chevron-circle-right {
+    margin-left: 5px;
+}
+
+
+.regulardots ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #0b2478; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: .75em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 1.1em;
+  }
+
+#main-doc {
+    position: relative;
+    margin-left: 325px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+    width: auto;
+    min-width: 200px;
+    max-width: 1200px;
+    height: 100%;
+    top: 0;
+    margin-right: auto;
+}
+
+#main-doc h2 {
+    font-size: 1.5em;
+    color: #0b2478;
+    margin-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#main-doc h3 {
+    margin-bottom: 5px;
+    color: #0b2478;
+    text-decoration: underline;
+}
+
+#main-doc article {
+    margin: 15px;
+}
+
+#basic-html-img {
+    width: 75%;
+}
+
+
+#main-doc h1 {
+    font-size: 2em;
+    color: #0b2478;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 10px;
+}
+
+hr {
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.wordcode{
+    background-color:rgb(37, 40, 49);
+    color: white;
+    border-radius: 5px;
+    padding: 4px 5px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.widecode {
+    color: white;
+    line-height: 1.2;
+    background-color:rgb(37, 40, 49);
+    padding: 5px 15px;
+    font-size: 1em;
+    width: auto;
+    display: block;
+    border-left: 5px solid #3c467a;
+    margin-bottom: 20px;
+}
+
+.widecode1 {
+    color: white;
+    line-height: 1.2;
+    background-color:rgb(37, 40, 49);
+    padding: 5px 15px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: auto;
+    display: block;
+    border-left: 5px solid #3c467a;
+}
+
+.redcode {
+    background-color:rgb(236, 211, 211);
+    padding: 20px 15px;
+    font-size: 1em;
+    width: auto;
+    display: block;
+    border-left: 5px solid #be0000;
+    margin: 20px 0px;
+}
+
+.updated {
+    margin: 20px 0 5px 0;
+    font-size: 1.2em;
+    color: #0b2478;
+}
+
+.code1 {
+    color: #fa7676;
+}
+
+.code2 {
+    color: #82c1ff;
+}
+
+.code3 {
+    color: #c69aff;
+}
+
+.code4 {
+    color: #ffa149;
+}
+
+.code5 {
+    color: #ff6060;
+}
+
+.code6 {
+    color: #1087f7;
+}
+
+.comment {
+    color: gray;
+}
+
+#footer {
+    position: relative;
+    display: inline-block;
+    bottom: 3;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+.warning {
+    color: red;
+}
+
+.nav-expand {
+    display: none;
+    font-size: .9rem;
+    transition: background-color 0.5s;
+    padding-top: 0;
+}
+
+.nav-expand2 {
+    font-size: .9rem;
+    transition: background-color 0.5s;
+    padding-top: 0;
+}
+
+.nav-expand2 a {
+    padding: 10px 10px 10px 40px;
+}
+
+.nav-expand2 a:hover {
+    background-color:rgb(23, 24, 43);
+
+}
+
+
+.nav-expand a {
+    padding: 10px 10px 10px 40px;
+}
+
+.nav-expand a:hover {
+    background-color:rgb(23, 24, 43);
+}
+
+.activea {
+    background-color:rgb(23, 24, 43);
+}
+
+#yourlist {
+    display: none;
+}
+
+#results {
+    display: flex;
+}
+
+.rightside {
+    margin-left: 35px;
+    margin-top: 1px;
+}
+
+
+#listresults {
+    margin-left: 10px;
+    margin-top: 0;
+    padding-left: 10px;
+}
+
+.inputarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.inputbtns {
+    margin-top: 10px;
+}
+
+.inputarea input {
+    width: 150px;
+    padding-right: 85px;
+    height: 30px;
+    border-radius: .4rem;
+    background-color: #ffffff00;
+}
+@media only screen and (max-width: 915px) {
+    #navbar {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        max-height: 275px;
+        z-index: 1;
+        border: none;
+        border-bottom: 2px solid gray;
+        text-align: center;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 300px;
+    }
+}
