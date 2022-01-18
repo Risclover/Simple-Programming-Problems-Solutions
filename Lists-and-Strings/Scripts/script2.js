@@ -52,7 +52,7 @@ userInput.addEventListener("keyup", function(event) {
 });
 
 /* Gives the user the option to press ctrl + z instead of clicking Calculate */
-userInput.addEventListener("keyup", function(event) {
+document.addEventListener("keyup", function(event) {
     if (event.ctrlKey && event.key === "z") {
       event.preventDefault();
       reverse.click();
@@ -60,7 +60,7 @@ userInput.addEventListener("keyup", function(event) {
 });
 
 /* Gives the user the option to press ctrl + x instead of clicking Reset */
-userInput.addEventListener("keyup", function(event) {
+document.addEventListener("keyup", function(event) {
     if (event.ctrlKey && event.key === "x") {
       event.preventDefault();
       reset.click();
